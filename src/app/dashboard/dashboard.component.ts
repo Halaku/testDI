@@ -12,7 +12,7 @@ import {RouterLink} from "@angular/router";
     <button (click)="shared.add()">add</button>
     <div>value {{shared.value}}</div>
 
-    <a routerLink="profile">Profile</a>
+    <a routerLink="profile">Profile</a><br>
     <a routerLink="awesome">Awesome lazy product!</a>
   `
 })
