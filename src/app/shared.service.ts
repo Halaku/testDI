@@ -8,7 +8,7 @@ export class SharedService {
   value = 0;
 
   constructor() {
-    console.log('inited');
+    console.log('SharedService init');
   }
 
   add() {

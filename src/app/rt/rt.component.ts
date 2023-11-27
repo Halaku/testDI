@@ -1,5 +1,5 @@
-import {Component, inject} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterLink, RouterOutlet} from "@angular/router";
 import {SharedService} from "../shared.service";
 
@@ -17,5 +17,7 @@ import {SharedService} from "../shared.service";
   providers: [SharedService],
 })
 export class RtComponent {
-  constructor() { console.log('Root component init')}
+  constructor() {
+    console.log('Root component init')
+  }
 }
