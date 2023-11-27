@@ -17,5 +17,5 @@ import {SharedService} from "../shared.service";
   providers: [SharedService],
 })
 export class RtComponent {
-  shared = inject(SharedService);
+  constructor() { console.log('Root component init')}
 }
