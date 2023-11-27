@@ -14,11 +14,12 @@ export const routes: Routes = [
     component: RtComponent,
     children: [
       {path: 'profile', component: ProfileComponent},
-      {path: '', component: DashboardComponent}
+      {path: '', component: DashboardComponent},
+      {
+        path: 'awesome',
+        loadChildren: () => import('./awesome-product/awesome-product.module').then((file) => file.AwesomeProductModule)
+      }
     ]
   },
-  {
-    path: 'awesome',
-    loadChildren: () => import('./awesome-product/awesome-product.module').then((file) => file.AwesomeProductModule)
-  }
+
 ];
