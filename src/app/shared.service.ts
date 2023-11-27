@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SharedService {
+export class SharedService implements OnDestroy{
 
   value = 0;
 
@@ -13,6 +13,10 @@ export class SharedService {
 
   add() {
     this.value = this.value + 1;
+  }
+
+  ngOnDestroy(): void {
+    console.log('SharedService destroy');
   }
 
 }
